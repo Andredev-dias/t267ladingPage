@@ -6,16 +6,31 @@
 }
 
 ul {
+  height: 80px;
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+  font-size: 20px;
+}
+
+li {
+  transition: all 200ms linear;
+}
+
+li:hover {
+  color: #ffff;
+  transition: all 200ms linear;
 }
 
 .menu {
-  color: darkorchid;
+  color: #9932cc;
   background-color: #1b1a22;
 }
 
 #section01 {
-  background-color: red;
+  background-color: #ffff;
 }
 
 #section02 {
@@ -32,4 +47,9 @@ ul {
 
 section {
   height: 70vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
