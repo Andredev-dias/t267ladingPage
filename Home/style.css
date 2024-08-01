@@ -136,3 +136,38 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.l01 {
+  width: auto;
+  text-align: left;
+}
+
+.p01 {
+  width: auto;
+  text-align: left;
+}
+
+@media (width <= 600px) {
+  .section01-left-div {
+    width: 300px;
+    height: 300px;
+  }
+
+  .img-style-section01 {
+    width: 300px;
+  }
+  .l01 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .p01 {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    gap: 2vw;
+    font-size: 16px;
+  }
+}
