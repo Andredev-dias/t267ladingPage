@@ -27,10 +27,15 @@ li:hover {
 .menu {
   color: #9932cc;
   background-color: #1b1a22;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #section01 {
   background-color: #ffff;
+  padding-top: 80px;
+  display: flex;
 }
 
 #section02 {
@@ -47,6 +52,18 @@ li:hover {
 
 section {
   height: 70vh;
+}
+
+.section01-left-div {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+.section01-right-div {
+  width: 800px;
+  height: 90%;
+  background-color: blue;
 }
 
 a {
