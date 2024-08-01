@@ -98,6 +98,11 @@ li:hover {
   gap: 2vh;
 }
 
+.heading-contact {
+  width: 100%;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   color: inherit;

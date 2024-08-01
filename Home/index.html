@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <header class="menu">
@@ -51,7 +52,27 @@
         <h2>parte 03</h2>
       </section>
       <section id="section04">
-        <h2>parte 04</h2>
+        <h2 class="heading-contact">Contato</h2>
+        <div class="left-contact">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" />
+          </div>
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <input type="text" id="mensagem" />
+          </div>
+          <button onclick="conferirMensagemWhatsApp()">
+            Conferir Mensagem
+          </button>
+        </div>
+        <div class="right-contact">
+          <div>
+            <p>Nome: <span id="confNome"></span></p>
+            <p>Mensagem: <span id="confMsg"></span></p>
+          </div>
+          <button onclick="enviar()">ZAP</button>
+        </div>
       </section>
     </main>
   </body>
