@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -32,6 +35,7 @@ li:hover {
   top: 0;
   width: 100%;
   z-index: 999;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #section01 {
@@ -58,8 +62,11 @@ li:hover {
 }
 
 #section03 {
-  background-color: yellow;
-  height: 70vh;
+  background-image: url("../");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 
 #section04 {
@@ -209,6 +216,41 @@ button:hover {
   border-radius: 10px;
   text-align: center;
   box-shadow: #9932cc 10px 5px 15px;
+}
+
+footer {
+  background-color: #090909;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+a > img {
+  opacity: 0.5;
+  transition: all 500ms linear;
+}
+
+a > img:hover {
+  transform: rotate(360deg);
+  opacity: 1;
+  transition: all 500ms linear;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
 }
 
 @media (width <= 600px) {
