@@ -49,8 +49,12 @@ li:hover {
 }
 
 #section02 {
-  background-color: green;
-  height: 70vh;
+  width: 100%;
+  height: auto;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  color: #9932cc;
+  background-color: #1b1a22ef;
 }
 
 #section03 {
@@ -59,13 +63,15 @@ li:hover {
 }
 
 #section04 {
-  height: 70vh;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2vw;
   padding-top: 80px;
+  padding-bottom: 80px;
+  flex-wrap: wrap;
 }
 
 .section01-left-div {
@@ -115,13 +121,14 @@ li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2vw;
+  gap: 1.2vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
+  padding: 20px;
 }
 
 .right-contact {
-  width: 300px;
+  width: auto;
   height: 300px;
   display: none;
   flex-direction: column;
@@ -130,6 +137,7 @@ li:hover {
   gap: 2vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
+  padding: 20px;
 }
 
 a {
@@ -148,7 +156,59 @@ a {
 }
 
 button {
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20vw;
+  border: none;
+  border: 2px solid #9932cc;
+  color: #9932cc;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #9932cc5b;
+  transition: all 200ms linear;
+  width: 250px;
+}
+
+button:hover {
+  transition: all 200ms linear;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+#nome,
+#mensagem {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1vw;
+  width: 250px;
+}
+
+.tec-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.wrap-tecs {
+  width: 100%;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.wrap-tecs > div {
+  background-color: #fffffff6;
+  color: #090909;
+  width: 300px;
+  height: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: #9932cc 10px 5px 15px;
 }
 
 @media (width <= 600px) {
@@ -173,5 +233,17 @@ button {
   ul {
     gap: 2vw;
     font-size: 16px;
+  }
+  #section04 {
+    gap: 3vh;
+  }
+  .right-contact {
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+  }
+  .text {
+    width: 200px;
+    max-height: auto;
   }
 }
